@@ -51,8 +51,8 @@ namespace Biblioteca.Controllers
                 objFiltro.TipoFiltro = tipoFiltro;
             }
 
-            ViewData ["Livros por página"] = (string.IsNullOrEmpty(itensPorPagina) ? 10 : int.Parse(itensPorPagina));
-            ViewData ["Página Atual"] = (PaginaAtual != 0 ? PaginaAtual : 1);
+            ViewData ["livrosPorPagina"] = (string.IsNullOrEmpty(itensPorPagina) ? 10 : int.Parse(itensPorPagina));
+            ViewData ["PaginaAtual"] = (PaginaAtual != 0 ? PaginaAtual : 1);
 
 
 
